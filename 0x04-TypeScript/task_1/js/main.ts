@@ -28,6 +28,30 @@ const director1: Director = {
 function printTeacher(firstName: string, lastName: string): string {
 	return `${firstName[0]}.${lastName}`;
 };
+interface studentclassinterface {
+	firstName: string;
+	lastName: string;
+	workOnHomework(): string;
+	displayName(): string;
+}
+interface studentclassconstructor {
+	new (firstName: string, lastName: string): studentclassinterface;
+}
+class StudentClass implements studentclassinterface {
+	firstName: string; 
+	lastName: string;
+	constructor (firstName: string, lastName: string)
+	{
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+	workOnHomework() {
+		return "Currently working";
+	}
+	displayName() {
+		return this.firstName;
+	}
+}
 // should print
 // // Object
 // // contract: false
