@@ -1,0 +1,28 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elotwo/alx-backend-javascript.git"
+  },
+  "keywords": [
+    "elotwo"
+  ],
+  "author": "emmanuel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elotwo/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/elotwo/alx-backend-javascript#readme",
+  "devDependencies": {
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2",
+    "sinon": "^19.0.2"
+  }
+}
